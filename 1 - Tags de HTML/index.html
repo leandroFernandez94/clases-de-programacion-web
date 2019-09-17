@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Mi primera pagina :)</title>
+</head>
+<body>
+  <h1>Titulo</h1>
+  <h2>Subtitulo</h2>
+  <h3>Copete(?)</h3>
+  <h4>Titulo un poco mas chico</h4>
+  <h5>Titulin</h5>
+
+  <p>Un parrafo largo que a nadie le eimporta asi que Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste consequatur deleniti expedita tempora aperiam distinctio consequuntur nemo necessitatibus voluptatum dignissimos similique pariatur a reprehenderit dolorum, veritatis qui modi magni quis?</p>
+  
+  <a href="https://japonismo.com">este link va a tu pagina preferida</a>
+  <!-- esto es un comentario, 
+    el browser(chrome, firefox, etc) los ignora,
+    es solo para cuando lees el codigo -->
+  <br><!--  esto significa nueva linea o break point -->
+  <br>
+  
+  <button>NO APRETAR! ESTO ES UN BOTON!</button>
+  
+  <div style="font-style: italic">
+    <p>
+      el div no tiene ningun comportamiento visual por defecto,
+      sirve para agrupar elementos
+      que compartan alguna caracteristica
+      o para tratarlos como una unidad
+    </p>
+    <p>lo podemos notar a simple vista no?</p>
+    <p>Lo vamos a ver en mas profundidad mas adelante</p>
+  </div>
+
+  <h4>span: sirve para escribir textos en una linea con un estilo particular</h4>
+
+  <span>~~</span>
+  <span style="color: red">esto</span>
+  <span style="color: green">es</span>
+  <span style="color: purple">un</span>
+  <span style="color: yellowgreen">estado</span>
+  <span style="color: brown">del</span>
+  <span style="color: blue">MSN</span>
+  <span>~~</span>
+  <!-- me parece importante que conozcas este color -->
+  <div style="background-color: #fafafa">
+    <h4>en un input podemos ingresar datos, por ejemplo para formularios</h4>
+    <h5>puede se un input de texto:</h5>
+    <span>anime favorito: </span><input type="text" placeholder="ingrese texto..."/>
+    <!-- la propiedad placeholder es el texto que queremos que aparezca cuando no hay nada escrito -->
+    <h5>de numeros:</h5>
+    <span>cantidad de entradas:</span> 
+    <input type="number" placeholder="ingrese numero..."/>
+    <h5>de fechas:</h5>
+    <span>fecha de nacimiento:</span>
+    <input type="date"/>
+    <p>entre otros...</p>
+    <!-- TIP: hay muchos tags que aceptan cerrarse con 
+      la barra de esta <manera /> 
+      sin necesidad de repetir su nombre para cerrarse
+      (como el input del ejemplo)
+      de todas formas es opcional 
+    -->
+  </div>
+
+  <h4>para las listas hay dos elementos</h4>
+  <p>el contenedor: ul(unordered list)</p>
+  <p>y sus elementos: li(list item)</p>
+  <ul>
+    <li>aprender HTML</li>
+    <li>aprender CSS</li>
+    <li>aprender JS</li>
+  </ul>
+
+  <h4>el tag select sirve para elegir entre muchas opciones</h4>
+  <p>mejor capitulo de LOST?</p>
+  <select name="seleccionar capitulo" id="selectCapitulos">
+    <option value="opcion1">La Constante</option>
+    <option value="opcion2">La Constante</option>
+    <option value="opcion3">o tambien puede ser La Constante</option>
+  </select>
+
+  <h4>textarea sirve para cuando hay que ingresar un texto largo(por ej. comentarios)</h4>
+  <textarea name="" id="" cols="50" rows="5">la verdad el curso me parecio muy bueno. recomendable. el que daba el curso me cayo bien.</textarea>
+
+  <h4>las tablas tienen varios elementos:</h4>
+  <ul>
+    <li>table: contenedor de la tabla</li>
+    <li>thead: contenedor del encabezado de la tabla(donde van los nombres de las columnas)</li>
+    <li>tbody: contenedor de las filas que tienen los datos</li>
+    <li>tfoot: contenedor del pie de la tabla(no lo use jamas)</li>
+    <li>tr(table row): representa a una fila, contiene celdas</li>
+    <li>th: celda del encabezado </li>
+    <li>td: celda comun</li>
+  </ul>
+
+  <span style="color: green">thead</span>
+  <span style="color: grey">tbody</span>
+  <span style="color: red">tfoot:</span>
+
+  <table>
+    <thead>
+      <tr>
+        <!-- colspan le indica que tiene que abarcar 2 columnas -->
+        <th colspan="2">Sagas Leidas</th>
+      </tr>
+      <tr>
+        <th>Ivan</th>
+        <th>Leandro</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Harry Potter</td>
+        <td>Game of Thrones</td>
+      </tr>
+      <tr>
+        <td>Narnia</td>
+        <td>Millenium</td>
+      </tr>
+    </tbody>
+    <tfoot>
+      <tr><td colspan="2">Total de libros</td></tr>
+      <tr>
+        <td>14</td>
+        <td>12</td>
+      </tr>
+    </tfoot>
+  </table>
+
+  <h4>las imagenes pueden ser traidas de la compu</h4>
+  <img src="mis-memes/batman-meme.jpg" alt="batman meme">
+  <h4>o directamente desde internet</h4>
+  <img src="https://imgflip.com/s/meme/Roll-Safe-Think-About-It.jpg" alt="think-meme">
+
+
+  <h3>para aprender mas sobre los tags de HTML visita: <a href="https://www.w3schools.com/tags/ref_byfunc.asp">w3schools</a></h3>
+
+
+
+  <!-- POR AHORA IGNORAR, la proxima vemos estilos junto con CSS -->
+  <style>
+      h4 {
+        color: blue;
+      }
+      table {
+        border: 1px solid #dddddd;
+      } 
+      td, th {
+        text-align: left;
+        padding: 8px;
+      }
+      tfoot{
+        background-color: red;
+      }
+      tbody{
+        background-color: grey;
+      }
+      thead{
+        background-color: green;
+      }
+
+    </style>
+</body>
+</html>
